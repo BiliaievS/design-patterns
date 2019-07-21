@@ -1,4 +1,4 @@
-package com.patterns.gof.creational.abstractFactory;
+package com.patterns.gof.creational.abstractfactory;
 
 import org.junit.jupiter.api.Test;
 

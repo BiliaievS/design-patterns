@@ -1,4 +1,7 @@
-package com.patterns.gof.creational.abstractFactory;
+package com.patterns.gof.creational.abstractfactory;
+
+import java.util.List;
+import java.util.Random;
 
 /**
  * @author Sergii Biliaiev
@@ -26,5 +29,11 @@ public class MyPizzaFactory extends PizzaFactory {
         pizza.addIngredients();
         pizza.bakePizza();
         return pizza;
+    }
+
+    public static void main(String[] args) {
+        MyPizzaFactory pizzaFactory = new MyPizzaFactory();
+        var randomPizza = List.of("cheese", "veggie").get(new Random().nextInt(2));
+        pizzaFactory.createPizza(randomPizza);
     }
 }

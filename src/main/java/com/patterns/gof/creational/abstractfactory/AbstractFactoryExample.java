@@ -1,4 +1,4 @@
-package com.patterns.gof.creational.abstractFactory;
+package com.patterns.gof.creational.abstractfactory;
 
 import java.util.List;
 import java.util.Random;
